@@ -1,0 +1,281 @@
+
+:root 
+{
+  --main-color: #607D8B;
+  --main-color: #607D8B;
+  --main-color-hover: #78909c;
+  --back-color: #ECEFF1;
+  --main-color-black: #455a64;
+  --main-color-light: #b0bec5;
+  --main-color-light2: #cfd8dc;
+  --color-revenue: #5cb85c;
+  --color-cost:  #d9534f;
+}
+
+.z-window-content
+{
+    padding: 0px !important;
+}
+
+.list-content:hover
+{
+    background-color: var(--main-color-light2);
+}
+
+.list-content-selected
+{
+    border: 1px solid #cfd8dc;
+    cursor: pointer;
+    background-color: var(--main-color-light);
+}
+
+.list-content
+{
+    border: 1px solid #cfd8dc;
+    cursor: pointer;
+}
+
+.login-center
+{
+    width: 500px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.btn-login
+{
+    color: var(--back-color) !important;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color) !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    margin-top: 7px;
+    width: 100%;
+}
+
+.error-login
+{
+    font-weight: bold;
+    padding: 2px 12px;
+    border-radius: 10px;
+    display: none;
+    color: var(--color-cost);
+}
+
+.main-color
+{
+    color: var(--main-color);
+}
+
+.back-color
+{
+    color: var(--back-color);
+}
+
+.title-login
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.show
+{
+  display: block;
+}
+
+.hide
+{
+  display: none;
+}
+
+
+a
+{
+    cursor: pointer;
+}
+
+nav
+{
+    background-color: var(--main-color);
+}
+
+body
+{
+   background-color: var(--back-color) !important;
+   height: 100%;
+   overflow: hidden;
+}
+
+ul
+{
+   padding: 0px;
+}
+
+label
+{
+    color : var(--main-color) !important;
+}
+
+input
+{
+    color: var(--main-color-black);
+}
+
+input:focus:not([readonly]),
+textarea:focus:not([readonly])
+{
+    border-bottom: 1px solid var(--main-color-hover) !important;
+    box-shadow: 0 1px 0 0 var(--main-color-hover) !important;
+}
+
+.input-field label
+{
+    color: var(--main-color) !important;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-floating:hover
+{
+    background-color: var(--main-color-light);
+}
+
+.btn-floating,
+.btn
+{
+    background-color: var(--main-color);
+}
+
+.dropdown-content
+{
+    background-color: var(--main-color) !important;
+    color: var(--back-color) !important;
+}
+
+.dropdown-content:hover
+{
+    background-color: var(--back-color ) !important;
+    color: var(--main-color )!important;
+}
+
+.dropdown-content>li>a
+{
+    color: --back-color;
+}
+
+.dropdown-content li:hover,
+.dropdown-content li.active,
+.dropdown-content li.selected,
+.dropdown-content>li>a:hover
+{
+    color: var(--main-color) !important;
+}
+
+.collapsible
+{
+    color: var(--main-color-black);
+}
+
+.collapsible-body
+{
+    padding: 10px !important;
+}
+
+.content
+{
+    overflow-y: auto;
+    height: calc( ~'100% - 85px' ) !important;
+    margin: .5rem 0 1rem 0;
+}
+
+.list-overflow
+{
+    overflow-y: auto;
+    height: calc( ~'100% - 135px' ) !important;
+}
+
+.list-icon
+{
+    width: 50pt;
+    font-size: 40pt;
+    padding: 0px 20px;
+    color: var(--main-color-black);
+}
+
+.list-title
+{
+    font-weight: bold;
+    color: var(--main-color-black);
+    font-size: 14pt;
+}
+
+.list-field
+{
+    color:var(--main-color-black);
+    width: 75px;
+    font-size: 10pt;
+}
+
+.list-value
+{
+    color: var(--main-color-black);
+    font-size: 10pt;
+}
+
+.list-table
+{
+    line-height: 0px;
+    margin: 10px 0px;
+}
+
+.prefix
+{
+    color: var(--main-color-black) !important;
+}
+
+.footer-form
+{
+    position: absolute;
+    bottom: 10pt;
+    right: 10pt;
+    padding: 4px 6px;
+}
+
+.toast
+{
+    background-color: var(--main-color);
+}
+
+#toast-container
+{
+    bottom: 30pt;
+    width: 20%;
+    left: 40%;
+    right: 40%;
+    top: auto !important;
+}
+
+.backdrop
+{
+    background: var(--main-color) !important;
+}
+
+.invalid+label:after
+{
+    font-size: 0.8rem !important;
+    transform: translateY(-140%) !important;
+}
+
+.input-field label:not(.label-icon).active::after
+{
+    transform: none !important;
+}
+
+input:focus.invalid,
+input.invalid
+{
+    border-bottom: 1px solid #F44336 !important;
+    box-shadow: 0 1px 0 0 #F44336 !important;
+}
