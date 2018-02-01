@@ -1,15 +1,21 @@
 
 function onLoginError()
 {
-    $( 'input' ).val( "" ).first().focus();
+    $( 'input' ).val( "" ).blur();
+    
+    $( 'input:first' ).focus();
 
-    $( '.login-center' ).effect( "bounce", "swith", function()
+    $( '.error-login' ).click( function()
     {
-        $( '.error-login' ).show( 'fade' );
+        $( this ).hide();
+    } );
 
-        setTimeout( function()
+    $( '.login-center-container' ).effect( "shake", function()
+    {
+        $( '.error-login' ).show( 'fade', setTimeout( function()
         {
-          $( '.error-login' ).hide( 'fade' );
-        }, 3000 );
+            $( '.error-login' ).hide( 'fade' );
+            
+        }, 3000 ) );
     } );
 }

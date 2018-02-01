@@ -1,3 +1,0 @@
-<package name="com.master.ui.parts" language="xul/html">
-    <widget name="ALabel"/>
-</package>

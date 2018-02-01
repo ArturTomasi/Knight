@@ -1,0 +1,3 @@
+<package name="com.knight.ui.parts" language="xul/html">
+    <widget name="ALabel"/>
+</package>

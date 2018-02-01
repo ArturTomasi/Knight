@@ -4,19 +4,34 @@
     Author     : artur
 --%>
 
-<%--<%@tag import="com.master.ApplicationUtilities"%>--%>
+<%@tag import="com.knight.application.ConfigurationManager"%>
+<%@tag import="com.knight.ApplicationUtilities"%>
+
 <%--<%@tag description="utilitario" body-content="scriptless" pageEncoding="UTF-8"%>--%>
-<%--<%!public ApplicationUtilities A = ApplicationUtilities.getInstance();%>--%>
-<%@attribute name="page" required="true" type="String"%>
+<%--<%!public ApplicationUtilities app = ApplicationUtilities.getInstance();%>--%>
+<%--<%!public ConfigurationManager cfg = ConfigurationManager.getInstance();%>--%>
+
+<%@attribute name="title" required="true" type="String"%>
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <!--<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"/>-->
-        <!--<link href="bootstrap/css/bootstrap.min.css" type="text/css"/>-->
-        <!--<link href="css/application.css" type="text/css"/>-->
-        <link type="text/css" href="assets/css/application.css">
+        
+        <title>Knight System(${title})</title>
+
+        <link rel="stylesheet" href="assets/materialize/dist/css/materialize.min.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/sweetalert/dist/sweetalert.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/jquery-ui/themes/smoothness/jquery-ui.min.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/components-font-awesome/css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/application.css" type="text/css"/>
+
+        <script type="text/javascript" src="assets/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/jquery-ui/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="assets/materialize/dist/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="assets/js/application.js"></script>
     </head>
-    <body>
-        <%--<%@include >--%>
-    </body>
+    
+     <jsp:doBody/>
+     
 </html>

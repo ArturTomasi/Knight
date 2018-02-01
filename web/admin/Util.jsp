@@ -7,10 +7,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="demo" tagdir="/WEB-INF/tags/" %>
 
-<demo:page>
-    A.getActiveUser();
-</demo:page>
-    
 <!DOCTYPE html>
 <html>
     <head>

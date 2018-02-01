@@ -1,32 +1,27 @@
-
 :root 
 {
-  --main-color: #607D8B;
-  --main-color: #607D8B;
-  --main-color-hover: #78909c;
-  --back-color: #ECEFF1;
-  --main-color-black: #455a64;
-  --main-color-light: #b0bec5;
-  --main-color-light2: #cfd8dc;
-  --color-revenue: #5cb85c;
-  --color-cost:  #d9534f;
-}
-
-.z-window-content
-{
-    padding: 0px !important;
+    --lighten-5: #eceff1;
+    --lighten-4: #cfd8dc;
+    --lighten-3: #b0bec5;
+    --lighten-2: #90a4ae;
+    --lighten-1: #78909c;
+    --main-color: #607d8b;
+    --darken-1: #546e7a;
+    --darken-2: #455a64;
+    --darken-3: #37474f;
+    --darken-4: #263238;
 }
 
 .list-content:hover
 {
-    background-color: var(--main-color-light2);
+    background-color: var(--lighten-4);
 }
 
 .list-content-selected
 {
     border: 1px solid #cfd8dc;
     cursor: pointer;
-    background-color: var(--main-color-light);
+    background-color: var(--lighten-2);
 }
 
 .list-content
@@ -39,12 +34,23 @@
 {
     width: 500px;
     margin: auto;
-    margin-top: 5%;
+    transform: translate(-50%, -65%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.login-center-container
+{
+    width: 500px;
+    margin: auto;
+    transform: none;
+    position: initial;
 }
 
 .btn-login
 {
-    color: var(--back-color) !important;
+    color: var(--lighten-5) !important;
     background-color: var(--main-color);
     border: 2px solid var(--main-color) !important;
     font-weight: bold !important;
@@ -55,11 +61,18 @@
 
 .error-login
 {
-    font-weight: bold;
-    padding: 2px 12px;
-    border-radius: 10px;
+    font-size: 12pt;
+    color: #fff !important;
+    border-radius: 8px;
     display: none;
-    color: var(--color-cost);
+    width: 100%;
+    background-color: indianred;
+    margin: auto;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    text-align: center;
+    padding: 5px 0px;s
 }
 
 .main-color
@@ -69,7 +82,7 @@
 
 .back-color
 {
-    color: var(--back-color);
+    color: var(--lighten-5);
 }
 
 .title-login
@@ -101,11 +114,14 @@ nav
     background-color: var(--main-color);
 }
 
-body
+body,
+.z-window-content
 {
-   background-color: var(--back-color) !important;
+   background-color: var(--lighten-5) !important;
    height: 100%;
    overflow: hidden;
+   margin: 0px !important;
+   padding: 0px !important;
 }
 
 ul
@@ -120,7 +136,7 @@ label
 
 input
 {
-    color: var(--main-color-black);
+    color: var(--darken-4);
 }
 
 input:focus:not([readonly]),
@@ -139,7 +155,7 @@ textarea:focus:not([readonly])
 .btn:focus,
 .btn-floating:hover
 {
-    background-color: var(--main-color-light);
+    background-color: var(--lighten-2);
 }
 
 .btn-floating,
@@ -151,18 +167,18 @@ textarea:focus:not([readonly])
 .dropdown-content
 {
     background-color: var(--main-color) !important;
-    color: var(--back-color) !important;
+    color: var(--lighten-5) !important;
 }
 
 .dropdown-content:hover
 {
-    background-color: var(--back-color ) !important;
+    background-color: var(--lighten-5 ) !important;
     color: var(--main-color )!important;
 }
 
 .dropdown-content>li>a
 {
-    color: --back-color;
+    color: --lighten-5;
 }
 
 .dropdown-content li:hover,
@@ -175,7 +191,7 @@ textarea:focus:not([readonly])
 
 .collapsible
 {
-    color: var(--main-color-black);
+    color: var(--darken-4);
 }
 
 .collapsible-body
@@ -201,26 +217,26 @@ textarea:focus:not([readonly])
     width: 50pt;
     font-size: 40pt;
     padding: 0px 20px;
-    color: var(--main-color-black);
+    color: var(--darken-4);
 }
 
 .list-title
 {
     font-weight: bold;
-    color: var(--main-color-black);
+    color: var(--darken-4);
     font-size: 14pt;
 }
 
 .list-field
 {
-    color:var(--main-color-black);
+    color:var(--darken-4);
     width: 75px;
     font-size: 10pt;
 }
 
 .list-value
 {
-    color: var(--main-color-black);
+    color: var(--darken-4);
     font-size: 10pt;
 }
 
@@ -232,7 +248,7 @@ textarea:focus:not([readonly])
 
 .prefix
 {
-    color: var(--main-color-black) !important;
+    color: var(--darken-4) !important;
 }
 
 .footer-form
